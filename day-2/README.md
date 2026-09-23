@@ -11,6 +11,17 @@ From use case to production-ready deployment: building an agent on Microsoft Fou
 
 Regulated customers need a repeatable, auditable path from prototype to production — not ad-hoc deployment. Observability (tracing, runtime monitoring) is the foundation that later Evaluations/FinOps (day-3) and Governance/Security (day-4) sessions depend on.
 
+## Audience
+
+Primary: AI/ML Engineers, Application Developers, Platform Engineering / DevOps.
+Also relevant to: Enterprise Architects tracking deployment patterns, SRE/Ops teams who will operate hosted agents in production.
+
+## Prerequisites
+
+- Completion of [Day 1](../day-1/README.md), or working knowledge of the landing-zone/network/identity foundation agents will be deployed onto.
+- General programming experience (Python or C#) and familiarity with REST APIs.
+- Basic familiarity with the Azure AI Foundry portal/SDK helpful but not required.
+
 ## How (format)
 
 TBD — likely lecture + live build/deploy walkthrough.
@@ -24,6 +35,10 @@ TBD in detail. Likely coverage, based on Foundry deep-dive materials:
 - Agent identities
 - Runtime monitoring and tracing
 - Agent operations basics
+
+## Key concepts
+
+Prompt agent vs. hosted agent, tool/function calling, agent identity (managed identity for agents), deployment pipelines, distributed tracing, OpenTelemetry, runtime monitoring.
 
 ## Deliverable
 

@@ -11,6 +11,16 @@ The closing session, addressing recurring customer architecture questions direct
 
 By this point, FSI customers have built, deployed, evaluated, governed, and grounded agents — but still need a clear framework for choosing the right architecture for new use cases going forward. This session closes the series by turning everything learned into durable decision criteria.
 
+## Audience
+
+Primary: Enterprise Architects, Technology Leaders / Program Sponsors, Application Developers.
+Also relevant to: Platform Engineering teams and any role that attended earlier sessions, since this closing session ties the whole series together.
+
+## Prerequisites
+
+- Completion of Days 1–5, or equivalent working familiarity with the full agent lifecycle (platform foundation → build/deploy → evaluation/FinOps → governance → knowledge grounding).
+- Basic understanding of agent architecture patterns (tools, orchestration, connectors) helpful.
+
 ## How (format)
 
 TBD — likely lecture + decision-matrix workshop, driven by recurring customer questions raised in the planning call.
@@ -26,6 +36,10 @@ TBD in detail. Likely coverage:
 - Connector architecture
 - Open-source framework interop considerations
 - Foundry vs. Copilot Studio decision matrix
+
+## Key concepts
+
+Microsoft Agent Framework, Agent-to-Agent (A2A) protocol, Model Context Protocol (MCP), Skills architecture, Connector architecture, Foundry vs. Copilot Studio decision criteria.
 
 ## Deliverable
 

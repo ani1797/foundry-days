@@ -11,6 +11,17 @@ Measuring agent quality, reliability, cost, and operational health. Kept as a de
 
 Regulated customers require demonstrable quality gates and cost accountability before agents can be trusted in production. This session gives platform/ops teams the operational cadence needed to sustain that trust over time.
 
+## Audience
+
+Primary: Data Scientists / ML Engineers, FinOps & Cloud Cost Management, Platform Operations teams.
+Also relevant to: Enterprise Architects, Governance/Risk stakeholders who consume evaluation signals as inputs to Day 4 controls.
+
+## Prerequisites
+
+- Completion of [Day 2](../day-2/README.md): a deployed, observable/instrumented agent is the subject being evaluated.
+- Basic understanding of LLM evaluation concepts (e.g., groundedness, relevance) helpful but not required.
+- Familiarity with Azure cost/billing constructs (e.g., cost management, budgets) helpful for the FinOps portion.
+
 ## How (format)
 
 TBD — likely lecture + framework walkthrough (metrics, dashboards, review cadence).
@@ -24,6 +35,10 @@ TBD in detail. Likely coverage:
 - Cost monitoring and FinOps practices for agentic workloads
 - Telemetry and KPI reviews
 - Continuous assessment cadence
+
+## Key concepts
+
+Evaluation metrics (groundedness, relevance, fluency, coherence), quality gates, red teaming, FinOps for AI workloads, token-based cost accounting, KPI/telemetry dashboards, review cadence.
 
 Related content: `Azure AI Foundry Governance.PPTX` (internal deck referenced in the planning call) — TBD to confirm relevance/reuse for this session vs. Day 4.
 

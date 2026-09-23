@@ -11,6 +11,17 @@ Connecting knowledge, context, and intelligence to agent experiences — groundi
 
 FSI agents are only as useful as the knowledge they can safely and accurately access. This session shows how to ground agents in enterprise data while respecting the access controls and governance model established in Day 4.
 
+## Audience
+
+Primary: Data & Knowledge Management teams, Application Developers, Enterprise Architects.
+Also relevant to: Business/Domain SMEs who own the enterprise data sources being grounded, Governance/Risk stakeholders validating data-access compliance.
+
+## Prerequisites
+
+- Completion of [Day 4](../day-4/README.md): grounding here must respect the access-control/governance model established there.
+- Basic understanding of common enterprise data sources (e.g., SharePoint, Fabric, web/public data) helpful.
+- Familiarity with retrieval-augmented generation (RAG) concepts helpful but not required.
+
 ## How (format)
 
 TBD — likely lecture + scenario walkthrough based on Foundry deep-dive sessions.
@@ -23,6 +34,10 @@ TBD in detail. Likely coverage:
 - Agentic retrieval and knowledge bases
 - MCP integration for grounding
 - Cross-source grounding patterns
+
+## Key concepts
+
+Foundry IQ, Work IQ, Fabric IQ, Web IQ, agentic retrieval, knowledge bases, grounding, Model Context Protocol (MCP), cross-source data access patterns.
 
 ## Deliverable
 

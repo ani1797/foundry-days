@@ -11,6 +11,17 @@ Controls for trustworthy enterprise adoption of agents: security, guardrails, re
 
 This is a **major focus area** for the whole series since it targets regulated industries directly. FSI customers need an explicit, auditable control map before they will approve production agent programs.
 
+## Audience
+
+Primary: Security & Risk / CISO teams, Compliance & Governance, Identity & Access Management (IAM).
+Also relevant to: Enterprise Architects, Internal Audit, Responsible AI / Model Risk Management stakeholders who must approve production agent programs.
+
+## Prerequisites
+
+- Completion of [Day 1](../day-1/README.md) (identity/RBAC foundation) and [Day 3](../day-3/README.md) (evaluation signals feeding into controls).
+- Familiarity with enterprise security/compliance frameworks (e.g., internal risk/audit processes) helpful.
+- General Responsible AI awareness helpful but not required.
+
 ## How (format)
 
 TBD — likely lecture + control-map workshop, supported by the `Azure AI Foundry Governance.PPTX` deck referenced in the planning call.
@@ -24,6 +35,10 @@ TBD in detail. Likely coverage:
 - Access controls (identity, RBAC — building on Day 1's foundation)
 - Monitoring and policy enforcement
 - Operational governance model
+
+## Key concepts
+
+Guardrails, content safety, Responsible AI principles, access control (RBAC), policy enforcement, auditability, operational governance model, model risk management.
 
 ## Deliverable
 

@@ -22,14 +22,14 @@ Enterprise Architects, AI Platform teams, Cloud Platform teams, Security & Gover
 
 ## Roadmap
 
-| Day | Theme | Date | Outcome / Deliverable |
-|-----|-------|------|------------------------|
-| [day-1](day-1/README.md) | AI Landing Zone + Microsoft Foundry Networking & Design | TBD (proposed 1st in series) | Landing-zone readiness assessment + prioritized implementation backlog; reference networking architecture + validation checkpoints |
-| [day-2](day-2/README.md) | Build & Deploy an Agent, Agent Observability (Hosted Agents) | TBD (proposed 2nd) | Working deployment approach + launch checklist |
-| [day-3](day-3/README.md) | Evaluations and FinOps | TBD (proposed 3rd) | Observability plan with priority signals + review cadence |
-| [day-4](day-4/README.md) | Agent Governance and Security | TBD (proposed 4th) | Governance and security control map |
-| [day-5](day-5/README.md) | Microsoft IQ | TBD (proposed 5th) | Prioritized Microsoft IQ adoption scenario |
-| [day-6](day-6/README.md) | Microsoft Agent Framework Deep Dive — A2A, MCP, Foundry vs. Copilot Studio | TBD (proposed 6th, closing session) | Architecture decision matrix |
+| Day | Theme | Date | Primary Audience | Outcome / Deliverable |
+|-----|-------|------|-------------------|------------------------|
+| [day-1](day-1/README.md) | AI Landing Zone + Microsoft Foundry Networking, Design & Security | TBD (proposed 1st in series) | Cloud Platform / Infrastructure teams, Network & Security Engineering, Enterprise Architects, Identity & Access Management | Landing-zone readiness assessment + prioritized implementation backlog; reference networking architecture + validation checkpoints |
+| [day-2](day-2/README.md) | Build & Deploy an Agent, Agent Observability (Hosted Agents) | TBD (proposed 2nd) | AI/ML Engineers, Application Developers, Platform Engineering / DevOps, Enterprise Architects | Working deployment approach + launch checklist |
+| [day-3](day-3/README.md) | Evaluations and FinOps | TBD (proposed 3rd) | Data Scientists / ML Engineers, FinOps & Cloud Cost Management, Platform Operations, Enterprise Architects | Observability plan with priority signals + review cadence |
+| [day-4](day-4/README.md) | Agent Governance and Security | TBD (proposed 4th) | Security & Risk / CISO teams, Compliance & Governance, Identity & Access Management, Enterprise Architects | Governance and security control map |
+| [day-5](day-5/README.md) | Microsoft IQ | TBD (proposed 5th) | Data & Knowledge Management teams, Application Developers, Enterprise Architects, Business/Domain SMEs | Prioritized Microsoft IQ adoption scenario |
+| [day-6](day-6/README.md) | Microsoft Agent Framework Deep Dive — A2A, MCP, Foundry vs. Copilot Studio | TBD (proposed 6th, closing session) | Enterprise Architects, Technology Leaders / Program Sponsors, Application Developers, Platform Engineering | Architecture decision matrix |
 
 Each `day-N/` folder contains:
 - `README.md` — what/why/how, lesson plan, deliverable, continuity links (TBD where details are not yet confirmed).
