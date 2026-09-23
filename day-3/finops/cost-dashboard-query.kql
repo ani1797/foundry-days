@@ -1,0 +1,12 @@
+// Day 3 asset — starter KQL for a token-cost dashboard (Azure Monitor / Log Analytics).
+// TBD: confirm table/schema names against your Foundry resource's diagnostic settings.
+FoundryRequestLogs
+| where TimeGenerated > ago(30d)
+| summarize
+    TotalPromptTokens = sum(PromptTokens),
+    TotalCompletionTokens = sum(CompletionTokens),
+    TotalTokens = sum(PromptTokens) + sum(CompletionTokens),
+    RequestCount = count()
+    by bin(TimeGenerated, 1d), AgentName
+| extend EstimatedCostUsd = TotalTokens * 0.00001 // TBD: replace with actual per-token rate
+| order by TimeGenerated desc

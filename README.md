@@ -16,15 +16,11 @@ Asmita Usturge, Owais Hashmi, Mariusz Kolodziej, Anirudh Aggarwal.
 
 Enterprise Architects, AI Platform teams, Cloud Platform teams, Security & Governance teams, developers building agents, and technology leaders sponsoring agent programs. Sessions are designed so different roles can join different days while a shared narrative connects the whole series. Target: **30–40 participants** from strategic FSI accounts.
 
-## Status of scheduling
-
-> **Note on dates:** The original planning-call calendar listed sessions out of prerequisite order (e.g., "Build & Deploy" dated before "AI Landing Zone," which it depends on). This repo orders sessions **logically** (curriculum order) instead. All dates below are marked **TBD**, proposed on a **monthly cadence** (the original calendar used a first-Wednesday-of-the-month rhythm, Oct 2026–Mar 2027) pending confirmation of room/sponsor logistics. See each day's README for the original reference date, where one existed.
-
 ## Roadmap
 
 | Day | Theme | Date | Primary Audience | Outcome / Deliverable |
 |-----|-------|------|-------------------|------------------------|
-| [day-1](day-1/README.md) | AI Landing Zone + Microsoft Foundry Networking, Design & Security | TBD (proposed 1st in series) | Cloud Platform / Infrastructure teams, Network & Security Engineering, Enterprise Architects, Identity & Access Management | Landing-zone readiness assessment + prioritized implementation backlog; reference networking architecture + validation checkpoints |
+| [day-1](day-1/README.md) | AI Landing Zone + Microsoft Foundry Networking & Design | **October 15, 2026 (confirmed)**, 10:00 AM – 2:00 PM | Cloud Platform / Infrastructure teams, Network & Security Engineering, Enterprise Architects, Identity & Access Management | Landing-zone readiness assessment + prioritized implementation backlog; reference networking architecture + validation checkpoints |
 | [day-2](day-2/README.md) | Build & Deploy an Agent, Agent Observability (Hosted Agents) | TBD (proposed 2nd) | AI/ML Engineers, Application Developers, Platform Engineering / DevOps, Enterprise Architects | Working deployment approach + launch checklist |
 | [day-3](day-3/README.md) | Evaluations and FinOps | TBD (proposed 3rd) | Data Scientists / ML Engineers, FinOps & Cloud Cost Management, Platform Operations, Enterprise Architects | Observability plan with priority signals + review cadence |
 | [day-4](day-4/README.md) | Agent Governance and Security | TBD (proposed 4th) | Security & Risk / CISO teams, Compliance & Governance, Identity & Access Management, Enterprise Architects | Governance and security control map |
@@ -45,13 +41,17 @@ Each `day-N/` folder contains:
 | Mariusz Kolodziej | Session refinement and planning support |
 | Louis Law (proposed) | FSI sponsorship / industry support |
 
-## Confirmed logistics (2026-09-23 follow-up call)
+## Logistics
 
-- First event targeted for **October**.
+- **Day 1 is scheduled for October 15, 2026, 10:00 AM – 2:00 PM.**
 - Classroom setup to support laptops and hands-on exploration.
-- Initial room capacity ~40, with overflow options.
-- Registration and waitlist capabilities will be used; registrants may be auto-enrolled into future sessions.
+- Initial room capacity ~40, with overflow options; Teams bridge opened for remote attendees.
+- Registration and waitlist capabilities will be used; November and December sessions will be auto-enrolled based on Day 1 demand. Additional sessions planned through March 2027.
 - Series remains a **connected**, six-part curriculum (not standalone sessions): each day recaps the prior deliverable, adds a deep dive with FSI/Insurance examples, and ends with a customer takeaway.
+- Every day's `README.md` links to a `docs/timelines.md` with a block-by-block session agenda for that day.
+- Day 1 security scope was narrowed to high-level identity concepts only; a separate, dedicated security session (Agent 365, On-Behalf-Of, Foundry control-plane security) is a likely future addition — not yet on the roadmap.
+- Cross-session FSI case study (e.g., a mortgage or insurance agent carried from Day 2 through observability, evaluation, and governance) is a proposed **stretch goal** to strengthen continuity — not yet a final decision.
+- Day ordering opens with Landing Zone + Networking as the platform prerequisite for the rest of the series.
 
 ## Open ideas raised (not yet final decisions)
 
@@ -59,9 +59,9 @@ Each `day-N/` folder contains:
 - Invite **Product Group speakers** for roadmap segments in sessions (possibly a standalone future roadmap session).
 - Convert the series content into a reusable blueprint/course after proving the format, adaptable beyond FSI.
 - Potentially extend the series beyond March 2027 if adoption is strong.
-- Whether Day 5 (Microsoft IQ) absorbs some MCP/A2A framework discussion instead of keeping it fully separate in Day 6 — flagged but undecided.
+- Whether Day 5 (Microsoft IQ) absorbs some MCP/A2A framework discussion instead of keeping it fully separate in Day 6 — undecided.
 
-## Open action items (from planning call)
+## Open action items
 
 - [ ] Share October room availability
 - [ ] Produce Microsoft-generic (non-Canada-specific) landing-zone content

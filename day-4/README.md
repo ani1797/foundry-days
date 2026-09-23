@@ -1,17 +1,17 @@
 # Day 4 — Agent Governance and Security
 
-**Date:** TBD (proposed 4th in series; original planning calendar listed this as "Session 5," dated Wednesday, December 2, 2026)
+**Date:** TBD (proposed 4th in series, targeting January)
 **Series:** [FSI Foundry Day Series](../README.md) · Previous: [day-3](../day-3/README.md) · Next: [day-5](../day-5/README.md)
 
 ## What
 
-Controls for trustworthy enterprise adoption of agents: security, guardrails, responsible AI, access control, monitoring, and policy enforcement.
+Enterprise controls for trustworthy agent adoption, from design through production operations: governance operating model, security design, and trust/assurance. High-level identity concepts only — deep security topics (Agent 365, OBO, Foundry control-plane security) are explicitly deferred to a possible future dedicated security session.
 
 ## Why
 
 This is a **major focus area** for the whole series since it targets regulated industries directly. FSI customers need an explicit, auditable control map before they will approve production agent programs.
 
-**Key concepts:** Guardrails, content safety, Responsible AI principles, access control (RBAC), policy enforcement, auditability, operational governance model, model risk management.
+**Key concepts:** Risk classification, use-case intake, approval models, least privilege, identity, secrets management, environment isolation, evaluation gates, human oversight, audit evidence, policy enforcement, model risk management.
 
 ## Audience
 
@@ -26,33 +26,29 @@ Also relevant to: Enterprise Architects, Internal Audit, Responsible AI / Model 
 
 ## Format
 
-Lecture + control-map workshop, supported by the `Azure AI Foundry Governance.PPTX` deck referenced in the planning call.
+Lecture + control-map workshop, 2 hours, supported by the `Azure AI Foundry Governance.PPTX` deck.
 
 ## Lesson plan
 
-Confirmed at the 2026-09-23 follow-up call ("enterprise controls for trustworthy adoption"):
+Full block-by-block agenda: [docs/timelines.md](docs/timelines.md).
 
-- Governance framework
-- Security controls
-- Guardrails
-- Regulatory requirements
-- Enterprise operating model
-- Responsible AI controls
+- Risk framing: risks of agent autonomy, tool usage, data access
+- Governance operating model: roles/responsibilities, use-case intake, risk classification, approval models, lifecycle management
+- Security design: least privilege, identity, data protection, network boundaries, secrets management, environment isolation
+- Trust and assurance: evaluation gates, human oversight, audit evidence, policy enforcement, change management
+- Control mapping activity: map risks to controls, identify owners, define evidence requirements
 
-Additional supporting coverage carried over from prior material:
-
-- Access controls (identity, RBAC — building on Day 1's foundation)
-- Monitoring and policy enforcement
-- Auditability / model risk management
+**Explicitly deferred:** deep security architecture (Agent 365, OBO, Foundry control-plane) — candidate for a future dedicated security session (TBD, not yet on the roadmap).
 
 ## Deliverable
 
-A governance and security control map.
+- **Artifact:** Governance and security control map.
+- **Take-home assets:** [`templates/governance-control-map.md`](templates/governance-control-map.md), [`templates/governance-package-checklist.md`](templates/governance-package-checklist.md).
 
 ## Recap
 
-[Day 3](../day-3/README.md) delivered evaluation signals and a review cadence, on top of the identity/RBAC foundation from [Day 1](../day-1/README.md). This session turns those signals into governance and security controls.
+[Day 3](../day-3/README.md) delivered evaluation and observability signals, on top of the identity/RBAC foundation from [Day 1](../day-1/README.md). This session turns those signals into governance and security controls.
 
 ## Resources
 
-See [docs/](docs/). Related: `Azure AI Foundry Governance.PPTX` (internal deck) — TBD to link once finalized for this session.
+See [docs/](docs/) and [docs/timelines.md](docs/timelines.md) for materials, and [templates/](templates/) for take-home templates. Related: `Azure AI Foundry Governance.PPTX` (internal deck) — TBD to link once finalized for this session.

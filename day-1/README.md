@@ -1,6 +1,6 @@
 # Day 1 — AI Landing Zone + Microsoft Foundry Networking & Design
 
-**Date:** TBD (proposed 1st in series; original planning calendar had this as "Session 1 & 2" dated Feb 3, 2027 — resequenced to open the series since it is a prerequisite for later days)
+**Date:** October 15, 2026, 10:00 AM – 2:00 PM
 **Series:** [FSI Foundry Day Series](../README.md) · Next: [day-2](../day-2/README.md)
 
 ## What
@@ -30,37 +30,25 @@ Also relevant to: Cloud Center of Excellence (CCoE) / platform governance leads,
 
 ## Format
 
-Classroom-style lecture + reference-architecture walkthrough. Confirmed at the 2026-09-23 follow-up call: room set up to support laptops and hands-on exploration, ~40 seats with overflow, registration/waitlist enabled (registrants may be auto-enrolled into future sessions). Content will use generalized (non-Canada-specific) landing-zone material per the planning call's action item. First event targeted for October.
+Classroom-style lecture + reference-architecture walkthrough. Room supports laptops and hands-on exploration, ~40 seats with overflow, Teams bridge for remote attendees, registration/waitlist enabled (registrants may be auto-enrolled into future sessions). Content uses generalized (non-Canada-specific) landing-zone material.
 
 ## Lesson plan
 
-Confirmed at the 2026-09-23 follow-up call (Day 1 scope was explicitly expanded to fold in what had been a separate networking session):
+Full block-by-block agenda: [docs/timelines.md](docs/timelines.md).
 
 - Foundry architecture overview
-- AI Landing Zone design
-- Network topology
-- Private connectivity
-- Identity
-- Data protection
-- Networking patterns
-- Outbound connectivity patterns
-- Security considerations
+- AI Landing Zone design (management groups, subscriptions, policy, tagging, core platform capabilities)
+- Network topology, private connectivity, DNS, routing, firewalls, proxy patterns, outbound connectivity
+- Identity and data protection (managed identities, Foundry RBAC, secrets, encryption)
+- Operating model and guardrails (platform ownership, approved patterns, exception handling)
 - MCP/agent/external connectivity considerations
 
-Additional supporting coverage carried over from prior landing-zone/networking material:
-
-- Subscription model, resource hierarchy, management groups and controls
-- Policy baselines and governance operating model
-- Foundry account/project design
-- RBAC
-- Logging and monitoring
-- Private endpoints, VNET integration, DNS, network isolation
-- Hub-and-spoke architectures
+**Explicitly deferred:** deep security architecture, Agent 365 security model, On-Behalf-Of (OBO) flows, Foundry control-plane security deep dive, detailed observability — candidates for a future dedicated security session (TBD, not yet on the roadmap).
 
 ## Deliverable
 
-- Landing-zone readiness assessment + prioritized implementation backlog
-- Reference networking architecture + validation checkpoints
+- **Artifact:** Landing-zone readiness assessment + prioritized implementation backlog; reference networking architecture + validation checklist.
+- **Take-home assets:** [`templates/landing-zone-readiness-assessment.md`](templates/landing-zone-readiness-assessment.md), [`templates/reference-architecture.md`](templates/reference-architecture.md), [`templates/validation-checklist.md`](templates/validation-checklist.md), [`bicep/`](bicep/) (basic, network-isolated, and hub-spoke Foundry setups).
 
 ## Recap
 
@@ -68,4 +56,4 @@ _None — this is the opening session of the series._
 
 ## Resources
 
-See [docs/](docs/). TBD — pending finalized decks, recordings, and the generalized landing-zone content referenced in the planning call's action items.
+See [docs/](docs/) and [docs/timelines.md](docs/timelines.md) for materials, and [templates/](templates/) and [bicep/](bicep/) for take-home templates and Bicep deployments. TBD — pending finalized decks, recordings, and the generalized landing-zone content.

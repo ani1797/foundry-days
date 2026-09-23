@@ -1,6 +1,6 @@
 # Day 6 — Microsoft Agent Framework Deep Dive (A2A, Foundry vs. Copilot Studio, Decision Matrix)
 
-**Date:** TBD (proposed 6th and closing session in series; original planning calendar dated this Wednesday, March 3, 2027)
+**Date:** TBD (proposed 6th and closing session in series, targeting March)
 **Series:** [FSI Foundry Day Series](../README.md) · Previous: [day-5](../day-5/README.md)
 
 ## What
@@ -20,29 +20,31 @@ Also relevant to: Platform Engineering teams and any role that attended earlier 
 
 ## Prerequisites
 
-- Completion of Days 1–5, or equivalent working familiarity with the full agent lifecycle (platform foundation → build/deploy → evaluation/FinOps → governance → knowledge grounding).
+- Completion of Days 1–5, or equivalent working familiarity with the full agent lifecycle (platform foundation → build/deploy → evaluation/observability/FinOps → governance → knowledge grounding).
 - Basic understanding of agent architecture patterns (tools, orchestration, connectors) helpful.
 
 ## Format
 
-TBD — likely lecture + decision-matrix workshop, driven by recurring customer questions raised in the planning call.
+TBD — likely lecture + decision-matrix workshop, 2 hours, driven by recurring customer architecture questions.
 
 ## Lesson plan
 
-Still an **open idea, not yet a final decision** as of the 2026-09-23 follow-up call — the group discussed adding a dedicated Microsoft Agent Framework / MCP / A2A deep dive as a possible extension of the series, alongside a separately proposed (also not finalized) Product Group roadmap session. Likely coverage if confirmed:
+Draft block-by-block agenda (unconfirmed): [docs/timelines.md](docs/timelines.md).
 
-- Microsoft Agent Framework overview
-- A2A (agent-to-agent) patterns
-- MCP patterns
-- Skills architecture
-- Connector architecture
+Still an **open idea, not yet a final decision** — a dedicated Microsoft Agent Framework / MCP / A2A deep dive is a possible extension of the series, alongside a separately proposed (also not finalized) Product Group roadmap session. Likely coverage if confirmed:
+
+- Microsoft Agent Framework overview and A2A (agent-to-agent) patterns
+- MCP patterns, Skills architecture, Connector architecture
 - Open-source framework interop considerations
-- Foundry vs. Copilot Studio decision matrix
-- Possible Product Group roadmap segment (guest speakers, NDA/public roadmap) — TBD, separate open idea from the same call
+- Foundry vs. Copilot Studio decision matrix walkthrough
+- Possible Product Group roadmap segment (guest speakers, NDA/public roadmap) — TBD, separate open idea
+
+**Open item:** whether this content is absorbed into Day 5 instead of staying separate — undecided.
 
 ## Deliverable
 
-An architecture decision matrix (Foundry vs. Copilot Studio, and when to use A2A/MCP/Skills/Connectors).
+- **Artifact:** Architecture decision matrix (Foundry vs. Copilot Studio, and when to use A2A/MCP/Skills/Connectors).
+- **Take-home assets:** [`templates/decision-matrix.md`](templates/decision-matrix.md), [`templates/framework-comparison.md`](templates/framework-comparison.md) (draft).
 
 ## Recap
 
@@ -50,4 +52,4 @@ An architecture decision matrix (Foundry vs. Copilot Studio, and when to use A2A
 
 ## Resources
 
-See [docs/](docs/). TBD — pending finalized decks and the decision-matrix template.
+See [docs/](docs/) and [docs/timelines.md](docs/timelines.md) (draft), and [templates/](templates/) for draft take-home templates. TBD — pending finalized decks.
