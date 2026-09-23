@@ -45,6 +45,22 @@ Each `day-N/` folder contains:
 | Mariusz Kolodziej | Session refinement and planning support |
 | Louis Law (proposed) | FSI sponsorship / industry support |
 
+## Confirmed logistics (2026-09-23 follow-up call)
+
+- First event targeted for **October**.
+- Classroom setup to support laptops and hands-on exploration.
+- Initial room capacity ~40, with overflow options.
+- Registration and waitlist capabilities will be used; registrants may be auto-enrolled into future sessions.
+- Series remains a **connected**, six-part curriculum (not standalone sessions): each day recaps the prior deliverable, adds a deep dive with FSI/Insurance examples, and ends with a customer takeaway.
+
+## Open ideas raised (not yet final decisions)
+
+- Extend the series with a dedicated **Microsoft Agent Framework / MCP / A2A** deep dive (currently modeled as [day-6](day-6/README.md), pending confirmation).
+- Invite **Product Group speakers** for roadmap segments in sessions (possibly a standalone future roadmap session).
+- Convert the series content into a reusable blueprint/course after proving the format, adaptable beyond FSI.
+- Potentially extend the series beyond March 2027 if adoption is strong.
+- Whether Day 5 (Microsoft IQ) absorbs some MCP/A2A framework discussion instead of keeping it fully separate in Day 6 — flagged but undecided.
+
 ## Open action items (from planning call)
 
 - [ ] Share October room availability

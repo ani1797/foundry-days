@@ -7,9 +7,11 @@
 
 From use case to production-ready deployment: building an agent on Microsoft Foundry, deploying it as a hosted agent, and instrumenting it for observability.
 
-## Why (FSI relevance)
+## Why
 
 Regulated customers need a repeatable, auditable path from prototype to production — not ad-hoc deployment. Observability (tracing, runtime monitoring) is the foundation that later Evaluations/FinOps (day-3) and Governance/Security (day-4) sessions depend on.
+
+**Key concepts:** Prompt agent vs. hosted agent, tool/function calling, agent identity (managed identity for agents), deployment pipelines, distributed tracing, OpenTelemetry, runtime monitoring.
 
 ## Audience
 
@@ -22,36 +24,38 @@ Also relevant to: Enterprise Architects tracking deployment patterns, SRE/Ops te
 - General programming experience (Python or C#) and familiarity with REST APIs.
 - Basic familiarity with the Azure AI Foundry portal/SDK helpful but not required.
 
-## How (format)
+## Format
 
-TBD — likely lecture + live build/deploy walkthrough.
+Lecture + live build/deploy walkthrough.
 
 ## Lesson plan
 
-TBD in detail. Likely coverage, based on Foundry deep-dive materials:
+Confirmed at the 2026-09-23 follow-up call ("move from business scenario to production deployment"):
+
+- Agent development
+- Hosted agents
+- Production deployment
+- Operational readiness
+- Foundry observability
+- Monitoring patterns
+- "Read + Observe" operational model
+
+Additional supporting coverage carried over from prior Foundry deep-dive material:
 
 - Prompt agents vs. hosted agents
 - Deployment approaches and tool integrations
 - Agent identities
-- Runtime monitoring and tracing
+- Distributed tracing / OpenTelemetry
 - Agent operations basics
-
-## Key concepts
-
-Prompt agent vs. hosted agent, tool/function calling, agent identity (managed identity for agents), deployment pipelines, distributed tracing, OpenTelemetry, runtime monitoring.
 
 ## Deliverable
 
 A working deployment approach and launch checklist (production deployment checklist / launch readiness guide).
 
-## Builds on
+## Recap
 
-[Day 1 — AI Landing Zone + Networking](../day-1/README.md): agents in this session are deployed onto the governed platform and secure network/identity foundation established there.
-
-## Feeds into
-
-[Day 3 — Evaluations and FinOps](../day-3/README.md) uses the deployed, observable agent from this session as the subject of quality, reliability, and cost measurement.
+[Day 1](../day-1/README.md) delivered the governed landing-zone platform foundation and secure network/identity patterns. Agents in this session are deployed onto that foundation.
 
 ## Resources
 
-See [docs/](docs/README.md). TBD — pending finalized decks, recordings, and demo materials.
+See [docs/](docs/). TBD — pending finalized decks, recordings, and demo materials.

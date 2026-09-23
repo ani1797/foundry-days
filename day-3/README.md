@@ -7,9 +7,13 @@
 
 Measuring agent quality, reliability, cost, and operational health. Kept as a dedicated session, deliberately separate from Day 2's observability content, because governance and guardrails (Day 4) depend specifically on evaluation results.
 
-## Why (FSI relevance)
+## Why
 
 Regulated customers require demonstrable quality gates and cost accountability before agents can be trusted in production. This session gives platform/ops teams the operational cadence needed to sustain that trust over time.
+
+**Key concepts:** Evaluation metrics (groundedness, relevance, fluency, coherence), quality gates, red teaming, FinOps for AI workloads, token-based cost accounting, KPI/telemetry dashboards, review cadence.
+
+Related content: `Azure AI Foundry Governance.PPTX` (internal deck referenced in the planning call) — TBD to confirm relevance/reuse for this session vs. Day 4.
 
 ## Audience
 
@@ -22,38 +26,35 @@ Also relevant to: Enterprise Architects, Governance/Risk stakeholders who consum
 - Basic understanding of LLM evaluation concepts (e.g., groundedness, relevance) helpful but not required.
 - Familiarity with Azure cost/billing constructs (e.g., cost management, budgets) helpful for the FinOps portion.
 
-## How (format)
+## Format
 
-TBD — likely lecture + framework walkthrough (metrics, dashboards, review cadence).
+Lecture + framework walkthrough (metrics, dashboards, review cadence).
 
 ## Lesson plan
 
-TBD in detail. Likely coverage:
+Confirmed at the 2026-09-23 follow-up call ("measure quality, reliability, cost, and operational health" — the group reiterated elevating evaluations as its own major topic, distinct from Day 2's observability content):
 
-- Agent evaluations and quality gates
-- Red teaming
-- Cost monitoring and FinOps practices for agentic workloads
+- Agent evaluations
+- Quality measurement
+- Reliability assessment
+- Cost management
+- Operational reviews
+- Continuous improvement loops
+
+Additional supporting coverage carried over from prior material:
+
+- Quality gates and red teaming
 - Telemetry and KPI reviews
-- Continuous assessment cadence
-
-## Key concepts
-
-Evaluation metrics (groundedness, relevance, fluency, coherence), quality gates, red teaming, FinOps for AI workloads, token-based cost accounting, KPI/telemetry dashboards, review cadence.
-
-Related content: `Azure AI Foundry Governance.PPTX` (internal deck referenced in the planning call) — TBD to confirm relevance/reuse for this session vs. Day 4.
+- Token-based cost accounting / FinOps for agentic workloads
 
 ## Deliverable
 
 An observability plan with priority signals and review cadence.
 
-## Builds on
+## Recap
 
-[Day 2 — Build & Deploy an Agent, Agent Observability](../day-2/README.md): evaluation and cost measurement here are applied to the hosted, instrumented agent deployed and observed in that session.
-
-## Feeds into
-
-[Day 4 — Agent Governance and Security](../day-4/README.md) relies on the evaluation signals and review cadence established here as inputs to governance controls and guardrails.
+[Day 2](../day-2/README.md) delivered a hosted, instrumented agent in production. This session evaluates that agent's quality, reliability, and cost.
 
 ## Resources
 
-See [docs/](docs/README.md). TBD — pending finalized decks and confirmation of the governance deck's overlap with this session.
+See [docs/](docs/). TBD — pending finalized decks and confirmation of the governance deck's overlap with this session.

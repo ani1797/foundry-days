@@ -7,9 +7,11 @@
 
 Controls for trustworthy enterprise adoption of agents: security, guardrails, responsible AI, access control, monitoring, and policy enforcement.
 
-## Why (FSI relevance)
+## Why
 
 This is a **major focus area** for the whole series since it targets regulated industries directly. FSI customers need an explicit, auditable control map before they will approve production agent programs.
+
+**Key concepts:** Guardrails, content safety, Responsible AI principles, access control (RBAC), policy enforcement, auditability, operational governance model, model risk management.
 
 ## Audience
 
@@ -22,36 +24,35 @@ Also relevant to: Enterprise Architects, Internal Audit, Responsible AI / Model 
 - Familiarity with enterprise security/compliance frameworks (e.g., internal risk/audit processes) helpful.
 - General Responsible AI awareness helpful but not required.
 
-## How (format)
+## Format
 
-TBD — likely lecture + control-map workshop, supported by the `Azure AI Foundry Governance.PPTX` deck referenced in the planning call.
+Lecture + control-map workshop, supported by the `Azure AI Foundry Governance.PPTX` deck referenced in the planning call.
 
 ## Lesson plan
 
-TBD in detail. Likely coverage:
+Confirmed at the 2026-09-23 follow-up call ("enterprise controls for trustworthy adoption"):
 
-- Security controls and enterprise guardrails
-- Responsible AI practices
+- Governance framework
+- Security controls
+- Guardrails
+- Regulatory requirements
+- Enterprise operating model
+- Responsible AI controls
+
+Additional supporting coverage carried over from prior material:
+
 - Access controls (identity, RBAC — building on Day 1's foundation)
 - Monitoring and policy enforcement
-- Operational governance model
-
-## Key concepts
-
-Guardrails, content safety, Responsible AI principles, access control (RBAC), policy enforcement, auditability, operational governance model, model risk management.
+- Auditability / model risk management
 
 ## Deliverable
 
 A governance and security control map.
 
-## Builds on
+## Recap
 
-[Day 3 — Evaluations and FinOps](../day-3/README.md): governance controls here are informed by the quality/cost signals and review cadence established in that session, and reuse the network/identity foundation from [Day 1](../day-1/README.md).
-
-## Feeds into
-
-[Day 5 — Microsoft IQ](../day-5/README.md) applies the same governance/access-control mindset established here to knowledge grounding and data-access scenarios.
+[Day 3](../day-3/README.md) delivered evaluation signals and a review cadence, on top of the identity/RBAC foundation from [Day 1](../day-1/README.md). This session turns those signals into governance and security controls.
 
 ## Resources
 
-See [docs/](docs/README.md). Related: `Azure AI Foundry Governance.PPTX` (internal deck) — TBD to link once finalized for this session.
+See [docs/](docs/). Related: `Azure AI Foundry Governance.PPTX` (internal deck) — TBD to link once finalized for this session.
