@@ -1,3 +1,19 @@
+# Changes (architect, 2026-11-15) - spec vs reality
+
+Evidence: `docs/setup-notes.md`, recon report (task t_e48c5d38), `docs/architecture.md`, `docs/notebook-outlines.md`. These override the text below.
+
+1. **Packages:** `uv sync` fails here (SSL HandshakeFailure). Use venv + pip (`C:/Python314/python.exe -m venv .venv`, then `pip install --pre` the pins listed in `pyproject.toml`). Pins in `pyproject.toml` are the versions actually installed. Do not use the `agent-framework` meta-package.
+2. **Prereleases:** `agent-framework-foundry-hosting` and `agent-framework-azure-ai-search` are prerelease (pinned). Memory stores, Skills API, Foundry IQ KB MCP, FoundryEvals are preview/experimental: add the "Optional/unavailable" note, never fake output.
+3. **Env names:** AF reads `FOUNDRY_PROJECT_ENDPOINT`/`FOUNDRY_MODEL`, not the spec's `AZURE_AI_*`. Keep spec names in `.env`; `fsi_common` passes `project_endpoint=`/`model=` explicitly. Added vars: `AZURE_SEARCH_KNOWLEDGE_BASE_NAME`, `AZURE_AI_KB_CONNECTION_NAME`, `AZURE_CONTAINER_REGISTRY_NAME`. `write-env` must emit them.
+4. **No Docker on this machine:** hosted agent deploy uses `create_version_from_code` or `az acr build`, not `docker build`.
+5. **Region/models:** East US 2; chat `gpt-4.1-mini`, embedding `text-embedding-3-small`, both GlobalStandard. Foundry basic agent setup (no capability host). Bicep API versions: see `architecture.md` (CognitiveServices 2026-11-01, Search 2025-05-01, ACR 2026-11-01, AppInsights 2020-02-02).
+6. **Helper API:** `shared/fsi_common.py` signatures are fixed in `notebook-outlines.md`; do not change without the architect.
+7. **Deps for notebooks:** `ipykernel`, `nbconvert`, `nbclient` pinned for `jupyter nbconvert --execute`. Python 3.14 venv, `requires-python >=3.12`.
+8. **Teardown:** also purge the soft-deleted Foundry account.
+9. Not verified live as of this note: every call against a Foundry project, quota, Search agentic-retrieval availability in East US 2.
+
+---
+
 # Day 2 build spec (source of truth for all workers)
 
 Repo: `C:/Users/aniaggarwal/Projects/foundry-days`, branch `day-2-build`. Work ONLY under `day-2/` (plus the paths your task names). Pattern to mimic: `C:/Users/aniaggarwal/Projects/how-to/build-with-microsoft-agent-framework` (numbered notebooks, README table, pyproject.toml, `.env.example`, `.gitignore`, `uv sync`, `az login`, no API keys, `DefaultAzureCredential`, each notebook: title + "What you'll learn" + Setup cell + demo cells + Key Takeaways + "Next up" link). Read 2-3 of those notebooks first.
