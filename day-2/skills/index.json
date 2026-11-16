@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "skills": [
+    {
+      "name": "adverse-action-letter",
+      "version": "1.0.0",
+      "owner": "compliance",
+      "approved": false,
+      "approved_by": null,
+      "sha256": "eaa2b090344283babc452c7a8d36a69b130cd4fd7c34db0bebf3e2f30bdc8ffd"
+    },
+    {
+      "name": "kyc-checklist",
+      "version": "1.0.0",
+      "owner": "operations",
+      "approved": true,
+      "approved_by": "j.chen",
+      "sha256": "c2ecf89bce537e3b6c0d50b9111c1feeb07e4cef75f5ab3eaead364d11063194"
+    },
+    {
+      "name": "mortgage-prequal",
+      "version": "1.0.0",
+      "owner": "credit-policy",
+      "approved": true,
+      "approved_by": "j.chen",
+      "sha256": "a281f0ddfcf4521db62714b950694449d10f30805bd16238bd6e36326c282063"
+    },
+    {
+      "name": "rate-disclosure",
+      "version": "1.0.0",
+      "owner": "compliance",
+      "approved": true,
+      "approved_by": "j.chen",
+      "sha256": "183aa53561ae5a48a08b44068704c296a6860cc60935145f46eb1503bde99473"
+    }
+  ]
+}
