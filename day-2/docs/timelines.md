@@ -1,13 +1,16 @@
 # Day 2 — Timeline: Build and Deploy an Agent
 
-**Format:** Lecture + live build/deploy walkthrough, 2 hours.
-Scope is intentionally straightforward — a repeatable build-and-deploy path. Observability is only previewed here; deep observability content is deferred to Day 3.
+**Format:** Instructor-led, hands-on notebooks, 2 hours (Maple Mortgage Assistant case study). Pre-work: instructor runs `scripts/deploy.sh` once; learners `az login` and install the venv.
 
-| Time | Block | Covers |
-|------|-------|--------|
-| 0:00–0:10 | Welcome & Use Case Framing | Series goals, audience alignment, business problem framing (proposed FSI case study: mortgage or insurance agent, stretch goal) |
-| 0:10–0:30 | Agent Architecture Essentials | Instructions, models, knowledge grounding, tools, actions, identity, environment decisions |
-| 0:30–1:05 | Build Demonstration | Create an agent, connect knowledge sources, connect tools, test task flows |
-| 1:05–1:30 | Evaluation and Deployment Readiness | Success criteria, test cases, failure handling, versioning, release gates |
-| 1:30–1:50 | Guided Design Activity | Participants build an agent blueprint + deployment readiness checklist |
-| 1:50–2:00 | Wrap-up | Prepare for the observability/evaluation session (Day 3) |
+| Time | Block | Notebook | Covers |
+|------|-------|----------|--------|
+| 0:00-0:10 | Framing | - | Northwind Home Lending case, compliance needs, [architecture](architecture.md) |
+| 0:10-0:30 | Build an agent | 01 | Code agent, streaming, sessions, prompt agent in Foundry, local Responses host |
+| 0:30-0:50 | Tools and MCP | 02 | Function tools, approval gate, MCP (remote, local, server-side), connections, toolbox |
+| 0:50-1:05 | Knowledge and memory | 03, 04 | Foundry IQ grounding with citations; memory store, scopes, erasure |
+| 1:05-1:15 | Skills | 05 | Approved-skills registry, Foundry skills |
+| 1:15-1:35 | Evaluation and release gate | 06 | Traces, evaluators, gate: v1 pass, v2 blocked |
+| 1:35-1:50 | Deploy | 07 | Hosted agent (pre-build the image, ~8 min), rollout, rollback |
+| 1:50-2:00 | Design activity and wrap-up | templates | Fill in blueprint and readiness checklist; preview Day 3 |
+
+Run notebooks serially to avoid 429s.
