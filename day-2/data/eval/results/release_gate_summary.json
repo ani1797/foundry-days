@@ -18,14 +18,14 @@
   "failures": [],
   "summary": {
    "groundedness": {
-    "passed": 36,
+    "passed": 37,
     "n": 37,
-    "rate": 0.972972972972973,
+    "rate": 1.0,
     "ci": [
-     0.86,
-     1.0
+     0.91,
+     1
     ],
-    "mean_score": 4.92
+    "mean_score": 4.97
    },
    "hate_unfairness": {
     "passed": 37,
@@ -35,7 +35,7 @@
      0.91,
      1
     ],
-    "mean_score": 0.0
+    "mean_score": 0.08
    },
    "no_rate_guarantee": {
     "passed": 37,
@@ -48,14 +48,14 @@
     "mean_score": 1.0
    },
    "relevance": {
-    "passed": 36,
+    "passed": 37,
     "n": 37,
-    "rate": 0.972972972972973,
+    "rate": 1.0,
     "ci": [
-     0.86,
-     1.0
+     0.91,
+     1
     ],
-    "mean_score": 4.65
+    "mean_score": 4.76
    },
    "self_harm": {
     "passed": 37,
@@ -109,8 +109,32 @@
    }
   },
   "eval_runs": {
-   "quality_run": "evalrun_8e7fc41bb9d84a098de81e1cbf44fd7f",
-   "tools_run": "evalrun_2a520cc27e2e46a3b466c83e417e879c"
+   "quality_run": "evalrun_6b503a0275264406a69a443062c1df91",
+   "tools_run": "evalrun_491c59964dd94951a6ebe6a6d2deb292",
+   "quality_attempts": [
+    [
+     "evalrun_5a363953f9a445c18d5ea9a6ce107d52",
+     37,
+     6,
+     {
+      "429": 6
+     }
+    ],
+    [
+     "evalrun_6b503a0275264406a69a443062c1df91",
+     6,
+     0,
+     {}
+    ]
+   ],
+   "tools_attempts": [
+    [
+     "evalrun_491c59964dd94951a6ebe6a6d2deb292",
+     14,
+     0,
+     {}
+    ]
+   ]
   }
  },
  "v2": {
@@ -120,14 +144,14 @@
   ],
   "summary": {
    "groundedness": {
-    "passed": 37,
+    "passed": 35,
     "n": 37,
-    "rate": 1.0,
+    "rate": 0.9459459459459459,
     "ci": [
-     0.91,
-     1
+     0.82,
+     0.99
     ],
-    "mean_score": 5.0
+    "mean_score": 4.84
    },
    "hate_unfairness": {
     "passed": 37,
@@ -137,7 +161,7 @@
      0.91,
      1
     ],
-    "mean_score": 0.08
+    "mean_score": 0.0
    },
    "no_rate_guarantee": {
     "passed": 37,
@@ -180,24 +204,24 @@
     "mean_score": 0.0
    },
    "task_adherence": {
-    "passed": 37,
+    "passed": 35,
     "n": 37,
-    "rate": 1.0,
+    "rate": 0.9459459459459459,
     "ci": [
-     0.91,
-     1
+     0.82,
+     0.99
     ],
-    "mean_score": 1.0
+    "mean_score": 0.95
    },
    "tool_call_accuracy": {
-    "passed": 13,
+    "passed": 11,
     "n": 13,
-    "rate": 1.0,
+    "rate": 0.8461538461538461,
     "ci": [
-     0.77,
-     1
+     0.58,
+     0.96
     ],
-    "mean_score": 5.0
+    "mean_score": 4.54
    },
    "violence": {
     "passed": 37,
@@ -211,8 +235,24 @@
    }
   },
   "eval_runs": {
-   "quality_run": "evalrun_92bc301bfa8943af9995740f83a78d5d",
-   "tools_run": "evalrun_c5bb799cbe08431bb59db4980c97a5bd"
+   "quality_run": "evalrun_e6f7843757b141ac8dadd17bf4fa2407",
+   "tools_run": "evalrun_c1d9d96d0b75457fb54b8fdde1835457",
+   "quality_attempts": [
+    [
+     "evalrun_e6f7843757b141ac8dadd17bf4fa2407",
+     37,
+     0,
+     {}
+    ]
+   ],
+   "tools_attempts": [
+    [
+     "evalrun_c1d9d96d0b75457fb54b8fdde1835457",
+     13,
+     0,
+     {}
+    ]
+   ]
   }
  }
 }
