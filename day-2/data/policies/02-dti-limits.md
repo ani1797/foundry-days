@@ -16,9 +16,9 @@ Version 2.4, effective 2026-01-01. Owner: Credit Policy.
 Ratios are calculated at the greater of the contract rate plus 2.00 percentage points, or 5.25%.
 
 ## 4. Decision rules for the assistant
-- Both ratios at or below limits and LTV at or below 80%: result **likely**.
-- Either ratio within 3 points above the limit, or LTV between 80% and 95%: result **refer** to an underwriter.
-- Otherwise: result **unlikely**; explain which measure failed.
+- GDS at or below 35%, TDS at or below 40% and LTV at or below 80%: result **likely**.
+- Within the 39% GDS and 44% TDS limits but above the "likely" thresholds, or LTV between 80% and 95%, or exactly one measure over its limit: result **refer** to an underwriter.
+- More than one measure failed: result **unlikely**; explain which measures failed.
 - The assistant must never describe any result as an approval.
 
 ## 5. Rental income

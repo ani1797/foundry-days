@@ -2,45 +2,24 @@
   "lender": "Northwind Home Lending (fictional)",
   "as_of": "2026-11-10",
   "currency": "CAD",
-  "disclosure": "Indicative rate, not a commitment to lend. Final rate is set at approval or rate lock.",
+  "disclosure": "Indicative only. Not a commitment to lend. Rates and eligibility are subject to full application, credit adjudication and underwriter approval.",
   "qualifying_rate_floor_pct": 5.25,
   "base_rates_pct": {
-    "1": {
-      "excellent": 4.79,
-      "good": 4.89,
-      "fair": 5.14
-    },
-    "3": {
-      "excellent": 4.49,
-      "good": 4.59,
-      "fair": 4.84
-    },
-    "5": {
-      "excellent": 4.29,
-      "good": 4.39,
-      "fair": 4.64
-    },
-    "10": {
-      "excellent": 4.99,
-      "good": 5.09,
-      "fair": 5.34
-    }
+    "1": 5.29,
+    "2": 5.09,
+    "3": 4.89,
+    "5": 4.79,
+    "7": 5.19,
+    "10": 5.39
   },
-  "apr_spread_pct": 0.12,
-  "ltv_adjustments_pct": [
-    {
-      "max_ltv_pct": 65,
-      "adj": -0.05
-    },
-    {
-      "max_ltv_pct": 80,
-      "adj": 0.0
-    },
-    {
-      "max_ltv_pct": 95,
-      "adj": 0.15
-    }
-  ],
+  "credit_adjustments_pct": {
+    "excellent": -0.1,
+    "good": 0.0,
+    "fair": 0.35,
+    "poor": 0.9
+  },
+  "ltv_over_80_adjustment_pct": 0.15,
+  "apr_spread_pct": 0.07,
   "rate_lock_days": {
     "60": 0.0,
     "90": 0.0,

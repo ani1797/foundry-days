@@ -25,7 +25,7 @@ Down payments below 20% require mortgage default insurance.
 |---|---|---|
 | excellent | 760+ | standard pricing |
 | good | 700-759 | standard pricing |
-| fair | 640-699 | pricing premium of 0.25 percentage points; refer if LTV above 80% |
+| fair | 640-699 | pricing premium of 0.35 percentage points; refer if LTV above 80% |
 | poor | below 640 | refer to underwriter; no automated pre-qualification |
 
 ## 5. Employment

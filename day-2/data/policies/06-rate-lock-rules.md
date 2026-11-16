@@ -2,7 +2,7 @@
 Version 2.9, effective 2026-02-15. Owner: Pricing and Compliance.
 
 ## 1. Indicative quotes
-Rates the assistant shows are **indicative** and based on the published rate sheet (rates.json) as of its date. They are not a commitment, guarantee or offer. Every quote must include the disclosure: "Indicative rate, not a commitment to lend. Final rate is set at approval or rate lock."
+Rates the assistant shows are **indicative** and based on the published rate sheet (rates.json) as of its date. They are not a commitment, guarantee or offer. Every quote must include the disclosure: "Indicative only. Not a commitment to lend. Rates and eligibility are subject to full application, credit adjudication and underwriter approval."
 
 ## 2. Rate lock
 - Available only after a complete application is submitted and a loan officer confirms.

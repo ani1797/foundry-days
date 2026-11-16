@@ -2,52 +2,52 @@
   "note": "Entirely fictional, masked records.",
   "customers": [
     {
-      "customer_id": "C1001",
-      "name": "Avery Chen",
+      "customer_id": "C-1001",
+      "name": "Priya Nair",
       "employment_type": "salaried",
       "credit_score_band": "good",
       "annual_income": 92000,
       "monthly_debts": 650,
       "city": "Toronto",
       "sin_masked": "***-***-237",
-      "email_masked": "a***@example.invalid",
+      "email_masked": "p***@example.invalid",
       "phone_masked": "***-***-5219",
       "account_last4": "8351",
       "open_case_id": "CASE-2601",
       "consent_to_contact": true
     },
     {
-      "customer_id": "C1002",
-      "name": "Jordan Singh",
-      "employment_type": "self_employed",
-      "credit_score_band": "good",
+      "customer_id": "C-1002",
+      "name": "Marcus Chen",
+      "employment_type": "self-employed",
+      "credit_score_band": "fair",
       "annual_income": 135000,
       "monthly_debts": 1200,
-      "city": "Calgary",
+      "city": "Vancouver",
       "sin_masked": "***-***-374",
-      "email_masked": "j***@example.invalid",
+      "email_masked": "m***@example.invalid",
       "phone_masked": "***-***-9438",
       "account_last4": "6702",
       "open_case_id": "CASE-2602",
       "consent_to_contact": true
     },
     {
-      "customer_id": "C1003",
-      "name": "Priya Nair",
+      "customer_id": "C-1003",
+      "name": "Avery Chen",
       "employment_type": "salaried",
       "credit_score_band": "excellent",
       "annual_income": 148000,
       "monthly_debts": 400,
-      "city": "Vancouver",
+      "city": "Calgary",
       "sin_masked": "***-***-511",
-      "email_masked": "p***@example.invalid",
+      "email_masked": "a***@example.invalid",
       "phone_masked": "***-***-4657",
       "account_last4": "5053",
       "open_case_id": "CASE-2603",
       "consent_to_contact": false
     },
     {
-      "customer_id": "C1004",
+      "customer_id": "C-1004",
       "name": "Marcus Dubois",
       "employment_type": "contract",
       "credit_score_band": "fair",
@@ -62,7 +62,7 @@
       "consent_to_contact": true
     },
     {
-      "customer_id": "C1005",
+      "customer_id": "C-1005",
       "name": "Elena Rossi",
       "employment_type": "retired",
       "credit_score_band": "good",
@@ -77,7 +77,7 @@
       "consent_to_contact": true
     },
     {
-      "customer_id": "C1006",
+      "customer_id": "C-1006",
       "name": "Sam O'Neill",
       "employment_type": "salaried",
       "credit_score_band": "poor",
@@ -92,7 +92,7 @@
       "consent_to_contact": false
     },
     {
-      "customer_id": "C1007",
+      "customer_id": "C-1007",
       "name": "Hana Tanaka",
       "employment_type": "salaried",
       "credit_score_band": "good",
@@ -107,9 +107,9 @@
       "consent_to_contact": true
     },
     {
-      "customer_id": "C1008",
+      "customer_id": "C-1008",
       "name": "Liam Becker",
-      "employment_type": "self_employed",
+      "employment_type": "self-employed",
       "credit_score_band": "fair",
       "annual_income": 98000,
       "monthly_debts": 800,
@@ -122,7 +122,7 @@
       "consent_to_contact": true
     },
     {
-      "customer_id": "C1009",
+      "customer_id": "C-1009",
       "name": "Fatima Khan",
       "employment_type": "salaried",
       "credit_score_band": "good",
@@ -137,7 +137,7 @@
       "consent_to_contact": false
     },
     {
-      "customer_id": "C1010",
+      "customer_id": "C-1010",
       "name": "Noah Fraser",
       "employment_type": "contract",
       "credit_score_band": "good",
