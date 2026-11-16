@@ -86,3 +86,14 @@ resource sOai 'Microsoft.Authorization/roleAssignments@2022-04-01' = {
   scope: account
   properties: { principalId: searchPrincipalId, principalType: 'ServicePrincipal', roleDefinitionId: rid(roles.openAIUser) }
 }
+// Foundry memory store: project + account identities call the embedding deployment (local auth is off)
+resource pOai 'Microsoft.Authorization/roleAssignments@2022-04-01' = {
+  name: guid(account.id, 'project-identity', roles.openAIUser)
+  scope: account
+  properties: { principalId: projectPrincipalId, principalType: 'ServicePrincipal', roleDefinitionId: rid(roles.openAIUser) }
+}
+resource aOai 'Microsoft.Authorization/roleAssignments@2022-04-01' = {
+  name: guid(account.id, 'account-identity', roles.openAIUser)
+  scope: account
+  properties: { principalId: accountPrincipalId, principalType: 'ServicePrincipal', roleDefinitionId: rid(roles.openAIUser) }
+}
