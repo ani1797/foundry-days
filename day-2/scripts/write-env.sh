@@ -6,7 +6,9 @@ HERE="$(cd "$(dirname "$0")/.." && { pwd -W 2>/dev/null || pwd; })"
 RG="${AZURE_RESOURCE_GROUP:-rg-foundry-day2}"
 DEP="${DEPLOYMENT_NAME:-foundry-day2}"
 
-out() { az deployment group show -g "$RG" -n "$DEP" --query "properties.outputs.$1.value" -o tsv | tr -d '\r'; }
+# ARM mangles output key casing (e.g. azurE_LOCATION); match case-insensitively.
+OUTS="$(az deployment group show -g "$RG" -n "$DEP" --query "properties.outputs" -o json | tr -d '\r\n')"
+out() { printf '%s' "$OUTS" | grep -oiE "\"$1\": *\{[^}]*\"value\": *\"[^\"]*\"" | sed -E 's/.*"value": *"([^"]*)"$/\1/'; }
 APPI="$(out APPINSIGHTS_NAME)"
 CS="$(az monitor app-insights component show -g "$RG" -a "$APPI" --query connectionString -o tsv | tr -d '\r')"
 
