@@ -1,52 +1,59 @@
 # Day 2 — Build and Deploy an Agent
 
-**Date:** TBD (proposed 2nd in series, targeting November)
 **Series:** [FSI Foundry Day Series](../README.md) · Previous: [day-1](../day-1/README.md) · Next: [day-3](../day-3/README.md)
 
-## What
+Hands-on notebooks that take one agent, the **Maple Mortgage Assistant**, from first prompt to a gated, versioned, hosted deployment on Microsoft Foundry. Every notebook runs against a real Foundry project, shows a visible result after each step, and cleans up the Foundry assets it creates.
 
-From use case to a deployable agent: designing an agent on Microsoft Foundry, connecting knowledge and tools, evaluating its behavior, and planning deployment. Deep observability and evaluation content is deferred to Day 3.
+## Case study (fictional)
 
-## Why
+**Northwind Home Lending** wants an assistant for loan officers and borrowers: mortgage pre-qualification, rate quotes, document checklists, policy Q&A and escalation to a human underwriter. Compliance is built in: no rate promises, required disclosures, PII handling and an audit trail. All data is fictional (`data/`).
 
-Regulated customers need a repeatable, auditable path from prototype to deployment-ready agent — not ad-hoc builds. This session gives developers a consistent agent design pattern that Day 3 (evaluation/observability) and Day 4 (governance) build on.
+## Notebooks
 
-**Key concepts:** Agent instructions, models, knowledge grounding, tools/actions, agent identity, environment decisions, deployment readiness, release gates.
-
-## Audience
-
-Primary: AI/ML Engineers, Application Developers, Platform Engineering / DevOps.
-Also relevant to: Enterprise Architects tracking deployment patterns, SRE/Ops teams who will operate the agent in production.
+| # | Notebook | What you'll learn |
+|---|----------|-------------------|
+| 01 | [Build an agent](notebooks/01-build-an-agent.ipynb) | Code agent with Agent Framework, streaming, sessions, prompt agent registered in Foundry, local Responses host |
+| 02 | [Tools and MCP](notebooks/02-tools-and-mcp.ipynb) | Function tools, approval gates, Learn MCP, local MCP server, server-side MCP tool, connections, toolbox |
+| 03 | [Foundry IQ knowledge](notebooks/03-foundry-iq-knowledge.ipynb) | Azure AI Search index, knowledge source and knowledge base, grounded answers with citations |
+| 04 | [Memory](notebooks/04-memory.ipynb) | Short-term sessions, Foundry memory store, scope isolation, right-to-erasure |
+| 05 | [Skills and registry](notebooks/05-skills-and-registry.ipynb) | Agent Skills, approved-skills registry with hash pinning, Foundry skills and toolbox |
+| 06 | [Evaluation and traces](notebooks/06-evaluation-and-traces.ipynb) | OpenTelemetry to App Insights, built-in and custom evaluators, release gate (v1 pass, v2 blocked) |
+| 07 | [Deploy a hosted agent](notebooks/07-deploy-hosted-agent.ipynb) | ACR build, hosted agent versions, gate-driven rollout, smoke test, rollback |
 
 ## Prerequisites
 
-- Completion of [Day 1](../day-1/README.md), or working knowledge of the landing-zone/network/identity foundation the agent will be deployed onto.
-- General programming experience (Python or C#) and familiarity with REST APIs.
-- Basic familiarity with the Azure AI Foundry portal/SDK helpful but not required.
+- Azure subscription with permission to create resources and role assignments (Owner, or Contributor + User Access Administrator) in a sandbox.
+- `az` (logged in: `az login`), Bicep CLI, Python 3.12+, Git. No Docker needed (images build in ACR).
+- Day 1 completed, or knowledge of the landing-zone and identity foundation the agent deploys onto.
 
-## Format
+## Setup
 
-Lecture + live build/deploy walkthrough, 2 hours. Scope is intentionally straightforward — a repeatable build-and-deploy path, not a deep dive.
+```bash
+cd day-2
+export USER_PRINCIPAL_ID=$(az ad signed-in-user show --query id -o tsv)
+bash scripts/deploy.sh --yes        # ~10 min: Foundry, models, Search, App Insights, ACR, roles; writes .env
+python -m venv .venv && source .venv/bin/activate        # Windows: .venv/Scripts/activate
+pip install --pre .                 # pinned dependencies from pyproject.toml (or install the pins directly)
+```
 
-## Lesson plan
+See [docs/setup-notes.md](docs/setup-notes.md) for package notes (`uv sync` also works where TLS to PyPI is not intercepted). `.env` is git-ignored and holds endpoints only: auth is Entra (`DefaultAzureCredential`), no keys. Regenerate it any time with `bash scripts/write-env.sh`.
 
-Full block-by-block agenda: [docs/timelines.md](docs/timelines.md).
+Run notebooks in order, one at a time: the model deployment is rate-limited and parallel runs return 429. Notebook 07 takes about 8 minutes for the ACR build. Notebook 03 keeps the shared Search index and knowledge base that 02, 06 and 07 use.
 
-- Use case framing (proposed FSI case study: mortgage or insurance agent, stretch goal)
-- Agent architecture essentials: instructions, models, knowledge grounding, tools, actions, identity, environment
-- Live build demonstration: create an agent, connect knowledge sources and tools, test task flows
-- Evaluation and deployment readiness: success criteria, test cases, failure handling, versioning, release gates
-- Guided design activity: build an agent blueprint + deployment readiness checklist
+## Known limits
 
-## Deliverable
+- Memory stores, Skills API, Foundry IQ knowledge base MCP and evaluators are preview; APIs may change. Notebooks say so where it applies.
+- A weighted canary (90/10) is not available to callers; notebook 07 does a 100% switch with smoke test and rollback.
+- The evaluation set is small (n=37, same-family LLM judge): treat scores as illustrative.
 
-- **Artifact:** Agent blueprint + deployment readiness checklist.
-- **Take-home assets:** [`templates/agent-blueprint.md`](templates/agent-blueprint.md), [`templates/deployment-readiness-checklist.md`](templates/deployment-readiness-checklist.md), [`sample-agent/`](sample-agent/) (starter code).
+## Teardown
 
-## Recap
+```bash
+bash scripts/teardown.sh   # deletes rg-foundry-day2 and purges the soft-deleted Foundry account
+```
 
-[Day 1](../day-1/README.md) delivered the governed landing-zone platform foundation and secure network/identity patterns. The agent in this session is designed and deployed onto that foundation.
+Each notebook already deletes its own agents, versions and connections; teardown removes the rest (hosted agent versions, ACR images, Search, shared index).
 
-## Resources
+## Take-home assets
 
-See [docs/](docs/) and [docs/timelines.md](docs/timelines.md) for materials, and [templates/](templates/) and [sample-agent/](sample-agent/) for take-home templates and the sample agent. TBD — pending finalized decks, recordings, and demo materials.
+[`templates/agent-blueprint.md`](templates/agent-blueprint.md), [`templates/deployment-readiness-checklist.md`](templates/deployment-readiness-checklist.md), [`sample-agent/`](sample-agent/) (pointer to the notebooks). Agenda: [docs/timelines.md](docs/timelines.md). Architecture: [docs/architecture.md](docs/architecture.md). Infra: [bicep/README.md](bicep/README.md).

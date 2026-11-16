@@ -1,9 +1,3 @@
-# Sample Agent — Build Demonstration Starter
+# Sample agent
 
-Minimal starter used in the session's live build demonstration: create an agent, connect a knowledge source, connect a tool, and test a task flow. Extend this rather than starting from scratch.
-
-Run:
-```bash
-pip install -r requirements.txt
-python agent.py
-```
+The starter code now lives in the notebooks. Start with [`../notebooks/01-build-an-agent.ipynb`](../notebooks/01-build-an-agent.ipynb); the deployable container source is in [`../hosted-agent/`](../hosted-agent/) (see notebook 07).

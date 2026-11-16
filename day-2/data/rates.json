@@ -1,0 +1,29 @@
+{
+  "lender": "Northwind Home Lending (fictional)",
+  "as_of": "2026-11-10",
+  "currency": "CAD",
+  "disclosure": "Indicative only. Not a commitment to lend. Rates and eligibility are subject to full application, credit adjudication and underwriter approval.",
+  "qualifying_rate_floor_pct": 5.25,
+  "base_rates_pct": {
+    "1": 5.29,
+    "2": 5.09,
+    "3": 4.89,
+    "5": 4.79,
+    "7": 5.19,
+    "10": 5.39
+  },
+  "credit_adjustments_pct": {
+    "excellent": -0.1,
+    "good": 0.0,
+    "fair": 0.35,
+    "poor": 0.9
+  },
+  "ltv_over_80_adjustment_pct": 0.15,
+  "apr_spread_pct": 0.07,
+  "rate_lock_days": {
+    "60": 0.0,
+    "90": 0.0,
+    "120": 0.1
+  },
+  "note": "Fictional data for training only."
+}

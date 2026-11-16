@@ -1,0 +1,29 @@
+[project]
+name = "foundry-days-day2-maple-mortgage"
+version = "0.1.0"
+description = "Day 2 hands-on: Foundry agents, IQ, memory, skills, evals and hosted deployment (Northwind Home Lending case study)"
+readme = "README.md"
+requires-python = ">=3.12"
+# Pins = versions actually installed and import-tested in .venv on 2026-11-15 (see docs/setup-notes.md).
+# Meta-package `agent-framework` is NOT used: it pulls ~30 connectors we do not need.
+dependencies = [
+    "agent-framework-core==1.26.0",
+    "agent-framework-foundry==1.16.2",
+    "agent-framework-foundry-hosting==1.0.0b261112",     # prerelease
+    "agent-framework-azure-ai-search==1.0.0b261106",     # prerelease
+    "azure-ai-projects==2.11.0",
+    "azure-identity==1.27.0",
+    "azure-search-documents==12.1.0",
+    "azure-monitor-opentelemetry==1.8.12",
+    "opentelemetry-sdk==1.45.2",
+    "mcp==2.3.0",
+    "python-dotenv==1.2.4",
+    "ipykernel==7.4.0",
+    "nbconvert==7.17.2",
+    "nbformat==5.11.1",
+    "nbclient==0.11.0",
+]
+
+[tool.uv]
+prerelease = "allow"
+# uv hits SSL HandshakeFailure on this machine; fallback is pip (docs/setup-notes.md).
