@@ -54,41 +54,8 @@ def load_settings(env_file: str | None = None, require: Sequence[str] = ()) -> S
     return s
 
 
-def get_credential():
-    """Return a DefaultAzureCredential (Entra ID only, no keys)."""
-    from azure.identity import DefaultAzureCredential
-    return DefaultAzureCredential()
-
-
-def get_project_client(settings: Settings | None = None, *, allow_preview: bool = False):
-    """Create an AIProjectClient for the Foundry project."""
-    from azure.ai.projects import AIProjectClient
-    s = settings or load_settings(require=("project_endpoint",))
-    kw: dict[str, Any] = {"allow_preview": True} if allow_preview else {}
-    return AIProjectClient(endpoint=s.project_endpoint, credential=get_credential(), **kw)
-
-
-def get_chat_client(settings: Settings | None = None):
-    """Create a FoundryChatClient bound to the project and chat deployment."""
-    from agent_framework.foundry import FoundryChatClient
-    s = settings or load_settings(require=("project_endpoint", "model"))
-    return FoundryChatClient(project_endpoint=s.project_endpoint, model=s.model, credential=get_credential())
-
-
-def make_agent(name: str, instructions: str, *, tools: Sequence = (), context_providers: Sequence = (),
-               settings: Settings | None = None):
-    """Build an Agent Framework Agent on the Foundry chat client."""
-    from agent_framework import Agent
-    return Agent(get_chat_client(settings), instructions, name=name, tools=list(tools) or None,
-                 context_providers=list(context_providers) or None)
-
-
-def get_foundry_agent(agent_name: str, agent_version: str | None = None, settings: Settings | None = None):
-    """Wrap a server-side Foundry agent (prompt or hosted) as an Agent Framework FoundryAgent."""
-    from agent_framework.foundry import FoundryAgent
-    s = settings or load_settings(require=("project_endpoint",))
-    return FoundryAgent(project_endpoint=s.project_endpoint, agent_name=agent_name,
-                        agent_version=agent_version, credential=get_credential())
+# NOTE: client/agent construction lives in the notebooks on purpose (learners must see it).
+# This module keeps only boilerplate: env loading, the Maple system prompt, mock data, redaction.
 
 
 # ---------------------------------------------------------------- case-study content
@@ -210,6 +177,7 @@ def audit_log() -> list[dict]:
 
 
 def _build_tools(escalation_mode: str = "never_require") -> list:
+    """Kept only for notebook 06 (evaluation harness). Notebooks 01, 02 and 07 wrap tools inline with `tool(...)`."""
     from agent_framework import tool
     never = {"approval_mode": "never_require"}
     return [tool(get_rate_quote, **never), tool(prequalify, **never), tool(get_document_checklist, **never),
