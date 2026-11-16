@@ -13,8 +13,8 @@ var roles = {
   openAIUser: '5e0bd9bd-7b93-4f28-af87-19fc36ad61bd'
   searchIndexDataContributor: '8ebe5a00-799e-43f5-93ac-243d3dce84a7'
   searchIndexDataReader: '1407120a-92aa-4202-b7e9-c0e197c71c8f'
-  searchServiceContributor: '7ca78c08-252a-4471-8644-bab5ee6c0e58'
-  acrPush: '8311e382-0749-4d2e-a7f2-0e3d7b1cb7f7'
+  searchServiceContributor: '7ca78c08-252a-4471-8644-bb5ff32d4ba0'
+  acrPush: '8311e382-0749-4cb8-b61a-304f252e45ec'
   acrPull: '7f951dda-4ed3-4680-a7ca-43fe172d538d'
   monitoringReader: '43d0d8ad-25c7-4714-9337-8ba259a9fe05'
 }
